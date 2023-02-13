@@ -1,4 +1,4 @@
-# graphs and algos
+# Graphs and algos
 Commands to do:
 
 git clone "url della repo"
