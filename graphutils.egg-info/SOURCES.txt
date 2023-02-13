@@ -1,3 +1,4 @@
+README.md
 setup.py
 algos/__init__.py
 algos/bellman_ford.py
@@ -19,4 +20,7 @@ graphutils.egg-info/requires.txt
 graphutils.egg-info/top_level.txt
 tests/__init__.py
 tests/directed_graph.py
+tests/test_bellman_ford.py
+tests/test_bfs.py
+tests/test_dijkstra.py
 tests/undirected_graph.py

@@ -48,6 +48,7 @@ class TestDirectedGraph(unittest.TestCase):
         self.assertIsNotNone(self.__graph.get_vertex("7"))
 
     def test_add_edge(self):
+        # Checks if number of edges is equal to 9
         self.assertEqual(len(self.__graph.get_edges()), 9)
         self.assertEqual(self.__graph.get_indegree("1"), 0)
         self.assertEqual(self.__graph.get_outdegree("5"), 2)

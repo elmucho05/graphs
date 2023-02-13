@@ -2,16 +2,15 @@ from collections import deque
 
 def bfs(graph, start, end):
     """
-    This function finds the shortest path between two vertices of a graph using Breadth-First Search (BFS) algorithm.
-
+    This function finds the shortest path between two vertices of a graph.
 
     Args:
-    1. graph (Graph): The graph object.
-    2. start (str): The label of the start vertex.
-    3. end (str): The label of the end vertex.
+    1) graph (Graph): The graph object.
+    2) start (str): The label of the start vertex.
+    3) end (str): The label of the end vertex.
     
     Returns:
-    int: The distance of the shortest path between the start and end vertices. If the path is not found, returns None.
+    int: the distance of the shortest path between the start and end vertices. If the path is not found, returns None.
 
     Raises:
     ValueError: If either the start or end vertex is not found in the graph.
@@ -21,6 +20,7 @@ def bfs(graph, start, end):
         raise ValueError("Start or end vertex not found in graph")
 
     # initialize distance dictionary with infinity for all vertices
+    # the line is essentially creating a dictionary where each vertex is mapped to positive infinity
     distance = {vertex: float('inf') for vertex in graph.get_vertices()}
     distance[start] = 0
 
