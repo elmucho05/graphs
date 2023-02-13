@@ -1,7 +1,7 @@
 # Graphs and algos
 Commands to do:
 
-git clone "url della repo"
+git clone "url"
 
 cd graphutils
 
